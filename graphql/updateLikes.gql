@@ -1,0 +1,31 @@
+mutation($id:ID!, $likes:Long!, $idUser:ID!, $favorites:[ID!]){
+  updateRecipe( 
+   input:{
+    where:{id:$id}
+    data:{
+      likes:$likes
+    }
+  }
+  ){
+    recipe{
+      id
+      likes
+    }
+  }
+  updateUser( 
+  input:{
+    where:{id:$idUser}
+    data:{
+      favorites:$favorites
+    }
+  }
+  ){
+    user{
+      id
+      favorites{
+        id
+        name
+      }
+    }
+  }
+}

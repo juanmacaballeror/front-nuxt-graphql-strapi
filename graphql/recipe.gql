@@ -1,0 +1,21 @@
+query($id:ID!){
+  recipe(id:$id){
+    id
+    name
+    duration
+    servings
+    img
+    description
+    ingredients
+    steps
+    likes
+    category{
+      id
+      name
+      slug
+    }
+    autor{
+      username
+    }
+  }
+}

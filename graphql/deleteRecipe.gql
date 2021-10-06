@@ -1,0 +1,11 @@
+mutation($id:ID!){
+  deleteRecipe( 
+  	input:{
+      where:{id:$id}
+    }
+  ){
+    recipe{
+      id
+    }
+  }
+}

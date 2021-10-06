@@ -1,0 +1,18 @@
+  query{
+    categories{
+      id
+      name
+      icon
+      img
+      description
+      slug
+    }
+    # recipes{
+    #   name
+    #   id
+    #   category{
+    #     id
+    #     slug
+    #   }
+    # }
+  }
